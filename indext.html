@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/efc246ce45.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>To Do List</title>
+  </head>
+  <body>
+    <div class="heading">My To Do List</div>
+    <main>
+      <div class="outer">
+        <div class="inputDiv">
+          <span class="icon"><i class="fa-solid fa-list-check"></i></span>
+          <input type="text" id="input" />
+          <button id="add">Add</button>
+        </div>
+        <div class="tickMark">
+          <div class="tick" id="tick">
+            <i id="doubleTick" class="fa-solid fa-check-double"></i>
+            <span>complete all task</span>
+          </div>
+          <div id="clear">clear completed</div>
+        </div>
+        <hr />
+        <div class="list" id="list"></div>
+        <hr />
+        <div class="bottom">
+          <span id="taskCounter">1</span>
+          <span id="tasksLeft">tasks left</span>
+          <span id="completedTask">Completed</span>
+          <span id="completeCounter">1</span>
+
+          <span id="unCompletedTask">Uncompleted</span>
+          <span id="uncompleteCounter">1</span>
+        </div>
+      </div>
+    </main>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,227 @@
+body {
+    padding: 1% 5% 5% 5%;
+    background-color: rgb(236, 222, 192);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.heading {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 600;
+    width: auto;
+    background: linear-gradient(271deg, #a962f5, #3d85fe, #f833e8);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+main {
+    margin: 1% 5%;
+    padding: 2%;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 45vw;
+    background: linear-gradient(rgb(241, 193, 103), rgb(252, 124, 73));
+}
+
+.outer {
+    border: 2px solid #b9b7b9;
+    box-shadow: 7px rgba(170, 170, 170, 0.863);
+    width: 90%;
+    border-radius: 10px;
+    height: auto;
+    background: linear-gradient(350deg, rgb(171, 82, 255), rgb(152, 177, 194));
+}
+
+.inputDiv {
+    margin-left: 4.5%;
+    display: grid;
+    grid-template-columns: 1fr 9fr 1fr;
+    width: 90%;
+    height: 5vh;
+    padding: 5px 0px 3px 5px;
+    background-color: rgb(209, 207, 207);
+    margin-top: 10px;
+    border-radius: 10px;
+}
+
+input[type=text] {
+    border: none;
+    background-color: rgb(209, 207, 207);
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.icon {
+    color: rgb(51, 51, 51);
+    align-self: center;
+    font-size: 25px;
+}
+
+#add {
+    font-size: 15px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 40px;
+    font-family: Calibri, 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+    transition: 0.1s ease-in-out;
+    background-color: #7caafa;
+    color: white;
+    cursor: pointer;
+}
+
+#add:hover {
+    outline: none;
+    border: 2px solid rgb(169, 252, 169);
+    transform: scale(1.07);
+    background-color: rgb(207, 248, 207);
+    color: green;
+}
+
+input[type=text]:focus {
+    outline: none;
+    background-color: rgb(209, 207, 207);
+}
+
+.tickMark {
+    margin: 14px 0px 10px 0px;
+    display: flex;
+    justify-content: space-around;
+    color: #4d4d4d;
+}
+
+.tick {
+    margin-left: -60px;
+}
+
+.tick:hover {
+    cursor: pointer;
+    color: #2e2e2e;
+    transform: scale(1.02);
+}
+
+.tickMark div:nth-child(2) {
+    margin-right: -60px;
+    color: #4d4d4d;
+}
+
+.tickMark div:nth-child(2):hover {
+    cursor: pointer;
+    color: #2e2e2e;
+    transform: scale(1.02);
+}
+
+input [type=checkbox] {
+    font-size: 40px;
+}
+
+.list {
+    margin: 2% 3% 2% 2%;
+}
+
+.listDiv {
+    margin: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.custom-checkbox input[type="checkbox"] {
+    display: none;
+}
+
+.custom-checkbox .checkmark {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+}
+
+.checkmark:hover {
+    background-color: #b3b3b3;
+}
+
+input[type="checkbox"]:checked + .checkmark {
+    background-color: #69b9ee;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+input[type="checkbox"]:checked + .checkmark:after {
+    display: block;
+}
+
+.checkmark:after {
+    left: 50%;
+    top: 50%;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: white;
+    transform: translate(-50%, -50%);
+}
+
+.listText {
+    font-size: 22px;
+    cursor: pointer;
+    margin: 8px;
+}
+
+.deleteBtn {
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(241, 33, 33);
+    color: white;
+    transition: 0.1s;
+}
+
+.deleteBtn:hover {
+    background-color: rgb(218, 30, 30);
+    transform: scale(1.06);
+}
+
+#taskCounter {
+    color: #141414;
+    font-size: 17px;
+    margin: 3px -2px 2px 10px;
+}
+
+.bottom span:nth-child(2) {
+    color: #2e2e2e;
+    font-size: 15px;
+}
+
+.bottom span:nth-child(4) {
+    float: right;
+    margin-right: 3px;
+}
+
+.bottom span:nth-child(3) {
+    float: right;
+    margin-right: 15px;
+    color: #2e2e2e;
+    font-size: 15px;
+}
+
+.bottom span:nth-child(5) {
+    float: right;
+    margin-right: 18px;
+    color: #2e2e2e;
+    font-size: 15px;
+}
+
+.bottom span:nth-child(6) {
+    float: right;
+    margin-right: 3px;
+}
